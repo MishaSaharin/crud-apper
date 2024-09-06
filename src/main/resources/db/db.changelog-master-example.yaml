@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/00000_CREATE_SCHEMA_sites.yaml
+  - include:
+      file: db/changelog/v0/0001_CREATE_TABLE_rules.yaml
+  - include:
+      file: db/changelog/v0/0002_CREATE_TABLE_administrations.yaml
+  - include:
+      file: db/changelog/v0/0003_CREATE_TABLE_statuses.yaml
+  - include:
+      file: db/changelog/v0/0004_CREATE_TABLE_types.yaml
