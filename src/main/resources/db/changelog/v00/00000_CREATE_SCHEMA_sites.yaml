@@ -1,0 +1,8 @@
+databaseChangeLog:
+  - changeSet:
+      id: 00000
+      author: postgres
+      changes:
+        - sql:
+            dbms: postgresql
+            sql: CREATE SCHEMA IF NOT EXISTS postgres.sites;

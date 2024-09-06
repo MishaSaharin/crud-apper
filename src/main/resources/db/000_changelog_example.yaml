@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      id: 000-create-my_tables
+      author: ${env.USERNAME}
+      changes:
+        - createTable:
+            schemaName: my_schema
+            tableName: my_table
+            columns:
+              - column:
+                  name: id
+                  type: VARCHAR(36)
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: my_column_name
+                  type: VARCHAR(36)
+                  constraints:
+                    nullable: false

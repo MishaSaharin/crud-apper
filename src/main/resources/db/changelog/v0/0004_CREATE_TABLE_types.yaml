@@ -1,0 +1,18 @@
+databaseChangeLog:
+  - changeSet:
+      id: 0004
+      author: postgres
+      changes:
+        - createTable:
+            schemaName: sites
+            tableName: types
+            columns:
+              - column:
+                  name: id
+                  type: VARCHAR(36)
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: type
+                  type: VARCHAR(36)
